@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 #the inverse of the matrix abd sets the value if the inverse via the 
 #setinverse function
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x = matrix(), ...) {
   matinverse <- x$getinverse()
   if(!is.null(matinverse)) {
     message("getting cached data")
